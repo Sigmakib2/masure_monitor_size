@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masure Your Monitor Size</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <script src="index.js"></script>
+    <header>
+        <div class="rcorners1" style="text-align: center;">
+            <h1>Masure Your Monitor Size</h1>
+            <button class="button"><a href="#c4"> How To Use This Tool?</a></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="rcorners2">
+            <table style="width:100%">
+                <caption>Different aspect ratios that have been used in monitors</caption>
+                <tr>
+                    <th>Aspect ratio (a:b)</th>
+                    <th>Example resolutions</th>
+                </tr>
+                <tr>
+                    <td>16:9</td>
+                    <td>1366x768, 1920x1080</td>
+                </tr>
+                <tr>
+                    <td>16:10</td>
+                    <td>1280x800, 1920x1200</td>
+                </tr>
+                <tr>
+                    <td>3:2</td>
+                    <td>2160x1440, 2560x1700</td>
+                </tr>
+                <tr>
+                    <td>5:4</td>
+                    <td>1280x1024</td>
+                </tr>
+                <tr>
+                    <td>4:3</td>
+                    <td>1024x768, 1600x1200</td>
+                </tr>
+                <tr>
+                    <td>21:9</td>
+                    <td>2560x1080, 3440x1440</td>
+                </tr>
+                <tr>
+                    <td>17:9</td>
+                    <td>4096×2160</td>
+                </tr>
+                <tr>
+                    <td>1:1</td>
+                    <td>1920x1920</td>
+                </tr>
+                <tr>
+                    <td>4:1</td>
+                    <td>17280x4320</td>
+                </tr>
+                <tr>
+                    <td>32:9</td>
+                    <td>3840x1080, 5120x1440</td>
+                </tr>
+            </table>
+        </div>
+        <div class="rcorners2">
+            <h3 style="text-align: center;">Enter The Aspect Ratio (a:b) According To You Monitor Resolutions</h3>
+            <p style="text-align: center;"><input type="text" id="l" class="input1" placeholder="a" /><b> : </b> <input
+                    type="text" id="h" class="input1" placeholder="b" /></p>
+            <h3 style="text-align: center;">Diagonal length of your monitor (Example:32 inch):</h3>
+            <p style="text-align: center;"> <input type="text" id="is" class="input2" />
+                <select id="matric" class="input3">
+                    <option value="inch"> inch </option>
+                    <option value="meter"> meter </option>
+                    <option value="centimeter"> centimeter </option>
+                    <option value="milimeter"> milimeter </option>
+                </select>
+            </p>
+            </br>
+            <p style="text-align: center;"><button class="result_button" type="button" onclick="do_things()">Find the
+                    Height and Length</button></p>
+        </div>
+        <div class="rcorners3" style="text-align: center;">
+            <p>
+            <h3><span id="output1"></span></h3>
+            </p>
+            <p>
+            <h3><span id="output2"></span></h3>
+            </p>
+        </div>
+
+        <div id="c4" style="text-align: center;" class="rcorners4">
+            <h2>How to calculate screen size?</h2>
+            <img src="https://1.bp.blogspot.com/-fvhdffYE8dg/X5kAV1y2L8I/AAAAAAAAAUY/VpIM4iCxkgMnRk6p4cTGTaj5sZjhcSuagCLcBGAsYHQ/s320/monitor_size.png" alt="Monitor Size" class="responsive">
+            <p class="monospace" style="text-align: justify;">
+                The diagonal length of a monitor is actually the size of that monitor or tv.
+                Measure the diagonal length of the screen. Suppose the diagonal length of a tv screen
+                is 32 inch. So, we can say that tv is a 32 inch tv.
+                But don’t calculate it with the border of the monitor or tv.
+                The border or frame is only for additional support.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="rcorners2">
+            <h5 style="text-align: center;">Copyright &copy; 2020 Sakib Mahmud (Sigmakib)サキブ・マフムード</h5>
+        </div>
+    </footer>
+
+</body>
+
+</html>
